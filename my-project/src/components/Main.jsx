@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Meet from "../assets/video.jpg"
 
+
+
 const Main = () => {
+  const [cards]=useState([
+    {
+      title:'Card-1',
+      text:`Lorem ipsum dolor sit amet consectetur.,<br/>Lorem, ipsum dolor.`
+    },
+    {
+      title:'Card-2',
+      text:`Lorem ipsum dolor sit amet consectetur.,<br/>Lorem, ipsum dolor.`
+    },
+    {
+      title:'Card-3',
+      text:`Lorem ipsum dolor sit amet consectetur.,<br/>Lorem, ipsum dolor.`
+    }
+  ])
   return (
     <div>
       <div>
@@ -9,8 +25,15 @@ const Main = () => {
         <p className='text-xl text-center'>Lorem ipsum dolor sit amet consectetur.,<br/>Lorem, ipsum dolor.</p>
       </div>
       <div className='container flex justify-between'>
-        <div className='left w=1/2'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eum veniam, nobis quas tempore delectus ullam quod qui est laboriosam animi itaque aperiam ea sed sequi accusamus ipsum alias? Hic voluptatem cupiditate voluptatum quasi harum commodi, assumenda illo ad quibusdam sit nobis rem facilis saepe officiis, earum accusamus quia veritatis.
+        <div className='left w=1/2 container'>
+          <div className="cards">
+            {cards.map((card,i)=>{
+              <div className="card" key={i}>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+              </div>
+            })}
+          </div>
         </div>
         <div className='right w=1/2'>
             <img src={Meet} alt="" />
