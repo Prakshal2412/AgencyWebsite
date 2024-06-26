@@ -45,7 +45,7 @@ const Navbar = () => {
       <a class="mr-5 hover:text-gray-900">Contact us</a>
     </nav>
     <div className='gap-5 flex '>
-    <button class="bg-green-200 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Log In
+    <button class="bg-green-200 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LogIN
     </button>
     <button class="bg-green-200 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign Up
     </button>
